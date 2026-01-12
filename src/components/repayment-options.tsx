@@ -3,6 +3,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { GithubRepaymentForm } from '@/components/github-repayment-form';
 import { VideoRepaymentForm } from '@/components/video-repayment-form';
+import { PuzzleRepaymentForm } from '@/components/puzzle-repayment-form';
 
 export default function RepaymentOptions() {
   return (
@@ -13,9 +14,10 @@ export default function RepaymentOptions() {
           Choose a method to submit your proof of work and reduce your time debt.
         </CardDescription>
       </CardHeader>
-      <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <CardContent className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <GithubRepaymentForm />
         <VideoRepaymentForm />
+        <PuzzleRepaymentForm />
       </CardContent>
     </Card>
   );
